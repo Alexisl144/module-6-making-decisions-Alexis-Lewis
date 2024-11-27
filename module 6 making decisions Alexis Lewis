@@ -1,0 +1,40 @@
+Def calculate_bill (area_code, phone number. text_messages):
+base_fee = 5
+Tax_rate = 0.14
+
+If text_messsages <= 100:
+	Total_fee = base_fee:
+Elif text messages <=300:
+	Total_fee =base_fee + (text_messages - 100) * 0.03
+Else:
+	Total_fee = base_fee + 200 * 0.03 + (text_messages - 300) * 0.02
+Total_bill = total_fee * (1 + tax_rate)
+
+print(f” Area Code: {area_code}, Phone Number: {phone_number}, Text Messages: {text_messages}”)
+print(f” Total Bill Before Tax: ${total_fee:.2f}”)
+print(f” Total Bill After Tax: ${total_bill:.2f}\n”)
+
+Def main ():
+sentinel _value = -1
+Area_code = int(input (“Enter area code (or {} to quit): “.format (sentinel_value)))
+Text_messages = int(input (“Enter number of text messages: “))
+
+While area_code != sentinel_value:
+	Phone_number = int(input (“Enter phone number: “))
+	Text_messages = int(input (“Enter number of text messages: “))
+
+
+Calculate_bill (area_code, phone_number, text_messages)
+
+Area_code = int(input( “Enter area code (or {} to quit): “.format (sentinel_value)))
+
+#Scenario 2: Display details for customers with over 100 messages 
+#Scenario 3: Display details for customers with a bill exceeding $10
+#Scenario 4: Display details for a specific area code
+
+# You can implement these scenarios by adding conditional checks within the loop
+# and only calling the ‘calculate_bill’ function when the conditions are met.
+
+If__name__ == “__main__”:
+	Main ()
+
